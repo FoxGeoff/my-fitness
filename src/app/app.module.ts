@@ -18,7 +18,6 @@ import { WelcomeComponent } from './welcome/welcome.component';
   declarations: [AppComponent, SignupComponent, LoginComponent, TrainingComponent,
     CurrentTrainingComponent, NewTrainingComponent, PastTrainingComponent, WelcomeComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MaterialModule, FlexLayoutModule, FormsModule],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
