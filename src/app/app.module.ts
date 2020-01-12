@@ -14,9 +14,10 @@ import { CurrentTrainingComponent } from './training/current-training/current-tr
 import { NewTrainingComponent } from './training/new-training/new-training.component';
 import { PastTrainingComponent } from './training/past-training/past-training.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { HeaderComponent } from './navigation/header/header.component';
 @NgModule({
   declarations: [AppComponent, SignupComponent, LoginComponent, TrainingComponent,
-    CurrentTrainingComponent, NewTrainingComponent, PastTrainingComponent, WelcomeComponent],
+    CurrentTrainingComponent, NewTrainingComponent, PastTrainingComponent, WelcomeComponent, HeaderComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MaterialModule, FlexLayoutModule, FormsModule],
   bootstrap: [AppComponent]
 })
