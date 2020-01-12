@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { MatSidenav } from '@angular/material';
 
 @Component({
@@ -8,11 +8,15 @@ import { MatSidenav } from '@angular/material';
 })
 export class SidenavListComponent implements OnInit {
 
-  @Input() sidenav: MatSidenav;
+  @Output() sidenavClose = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSidenavClose() {
+    this.sidenavClose.emit();
   }
 
 }
