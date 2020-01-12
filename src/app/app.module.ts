@@ -15,9 +15,10 @@ import { NewTrainingComponent } from './training/new-training/new-training.compo
 import { PastTrainingComponent } from './training/past-training/past-training.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { HeaderComponent } from './navigation/header/header.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 @NgModule({
   declarations: [AppComponent, SignupComponent, LoginComponent, TrainingComponent,
-    CurrentTrainingComponent, NewTrainingComponent, PastTrainingComponent, WelcomeComponent, HeaderComponent],
+    CurrentTrainingComponent, NewTrainingComponent, PastTrainingComponent, WelcomeComponent, HeaderComponent, SidenavListComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MaterialModule, FlexLayoutModule, FormsModule],
   bootstrap: [AppComponent]
 })
