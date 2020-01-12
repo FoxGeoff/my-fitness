@@ -2,29 +2,12 @@
   <mat-sidenav #sidenav role="navigation">
     <div fxlayout="row" fxLayoutAlign="center center">LOGO</div>
     <div>
-      <mat-nav-list>
-        <a mat-list-item routerLink="/signup" (click)="sidenav.close()">
-          <mat-icon>face</mat-icon>
-          <span class="nav-text">Signup</span>
-        </a>
-        <a mat-list-item routerLink="/login" (click)="sidenav.close()">
-          <mat-icon>input</mat-icon>
-          <span class="nav-text">Login</span>
-        </a>
-        <a mat-list-item routerLink="/training" (click)="sidenav.close()">
-          <mat-icon>fitness_center</mat-icon>
-          <span class="nav-text">Training</span>
-        </a>
-        <a mat-list-item>
-          <button mat-icon-button (click)="sidenav.close()">
-            <mat-icon>keyboard_tab</mat-icon>
-            <span class="nav-text">Logout</span>
-          </button>
-        </a>
-      </mat-nav-list>
+      <!---->
+      <app-sidenav-list [sidenav]="sidenav"></app-sidenav-list>
     </div>
   </mat-sidenav>
   <mat-sidenav-content>
+    <!---->
     <mat-toolbar color="primary">
       <div fxHide.gt-xs>
         <button mat-icon-button (click)="sidenav.toggle()">
