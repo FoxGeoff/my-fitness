@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 export interface Food {
   value: string;
@@ -11,6 +11,8 @@ export interface Food {
 })
 export class NewTrainingComponent implements OnInit {
 
+  @Output() startTraining = new EventEmitter<void>();
+
   foods: Food[] = [
     { value: 'steak-0', viewValue: 'Steak' },
     { value: 'pizza-1', viewValue: 'Pizza' },
@@ -22,4 +24,7 @@ export class NewTrainingComponent implements OnInit {
   ngOnInit() {
   }
 
+  onStartNewTraining() {
+    this.startTraining.emit();
+  }
 }
