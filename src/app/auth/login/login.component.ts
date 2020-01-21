@@ -9,9 +9,11 @@ import { AuthService } from '../auth.service';
 })
 export class LoginComponent implements OnInit {
 
+  loginForm: Form;
   constructor(public authService: AuthService) { }
 
   ngOnInit() {
+
   }
   onSubmit(form: Form) {
 
