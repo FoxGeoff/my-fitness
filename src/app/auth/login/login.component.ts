@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Form } from '@angular/forms';
+import { Form, FormGroup } from '@angular/forms';
 import { AuthService } from '../auth.service';
 
 @Component({
@@ -8,8 +8,8 @@ import { AuthService } from '../auth.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  loginForm: FormGroup;
 
-  loginForm: Form;
   constructor(public authService: AuthService) { }
 
   ngOnInit() {
