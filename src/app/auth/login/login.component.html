@@ -2,19 +2,15 @@
   <form
     fxLayoutGap="10px"
     fxLayout="column"
-    #f="ngForm"
-    (ngSubmit)="onSubmit(f)"
+    [formControlName]="loginForm"
+    (ngSubmit)="onSubmit()"
   >
     <mat-form-field>
       <input
         type="email"
         matInput
         placeholder="Your email"
-        ngModel
-        name="email"
-        email
-        required
-        #emailInput="ngModel"
+        formControlName="email"
       />
       <mat-error *ngIf="emailInput.hasError('required')">
         Field must not be empty.</mat-error
@@ -28,11 +24,7 @@
         type="password"
         matInput
         placeholder="Your password"
-        ngModel
-        name="password"
-        required
-        minlength="6"
-        #pwInput="ngModel"
+        formControlName="password"
       />
       <mat-error *ngIf="emailInput.hasError('required')">
         Field must not be empty.</mat-error
@@ -40,7 +32,7 @@
     </mat-form-field>
 
     <button
-      [disabled]="f.invalid"
+      [disabled]="loginForm.invalid"
       mat-raised-button
       color="primary"
       type="submit"

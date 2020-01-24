@@ -4,7 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { SignupComponent } from './auth/signup/signup.component';
@@ -22,7 +22,7 @@ import { AuthService } from './auth/auth.service';
   declarations: [AppComponent, SignupComponent, LoginComponent, TrainingComponent,
     CurrentTrainingComponent, NewTrainingComponent, PastTrainingComponent, WelcomeComponent,
     HeaderComponent, SidenavListComponent, StopTrainingComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MaterialModule, FlexLayoutModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MaterialModule, FlexLayoutModule, FormsModule, ReactiveFormsModule],
   bootstrap: [AppComponent],
   providers: [AuthService],
   entryComponents: [StopTrainingComponent]
