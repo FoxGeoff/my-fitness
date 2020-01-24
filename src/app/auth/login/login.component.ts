@@ -11,6 +11,7 @@ export class LoginComponent implements OnInit {
 
   loginForm: FormGroup;
   email: FormControl;
+  password: FormControl;
 
   constructor(public authService: AuthService) { }
 

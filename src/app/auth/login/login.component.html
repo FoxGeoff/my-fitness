@@ -2,7 +2,7 @@
   <form
     fxLayoutGap="10px"
     fxLayout="column"
-    [formControlName]="loginForm"
+    [formGroup]="loginForm"
     (ngSubmit)="onSubmit()"
   >
     <mat-form-field>
@@ -24,7 +24,7 @@
         placeholder="Your password"
         formControlName="password"
       />
-      <mat-error *ngIf="email.errors.required">
+      <mat-error *ngIf="password.errors.required">
         Field must not be empty.</mat-error
       >
     </mat-form-field>
