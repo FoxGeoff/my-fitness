@@ -12,12 +12,10 @@
         placeholder="Your email"
         formControlName="email"
       />
-      <mat-error *ngIf="emailInput.hasError('required')">
+      <mat-error *ngIf="email.errors.required">
         Field must not be empty.</mat-error
       >
-      <mat-error *ngIf="!emailInput.hasError('required')">
-        E-mail is invalid.</mat-error
-      >
+      <mat-error *ngIf="!email.errors.required"> E-mail is invalid.</mat-error>
     </mat-form-field>
     <mat-form-field>
       <input
@@ -26,7 +24,7 @@
         placeholder="Your password"
         formControlName="password"
       />
-      <mat-error *ngIf="emailInput.hasError('required')">
+      <mat-error *ngIf="email.errors.required">
         Field must not be empty.</mat-error
       >
     </mat-form-field>

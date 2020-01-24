@@ -10,6 +10,7 @@ import { AuthService } from '../auth.service';
 export class LoginComponent implements OnInit {
 
   loginForm: FormGroup;
+  email: FormControl;
 
   constructor(public authService: AuthService) { }
 
@@ -25,7 +26,8 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
-
+    // TODO: Use EventEmitter with form value
+    console.warn(this.loginForm.value);
   }
 
 }
