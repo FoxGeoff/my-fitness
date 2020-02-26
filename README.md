@@ -13,3 +13,5 @@ Online Ref. : Safari
 * Angular Flex Layout: <https://github.com/angular/flex-layout/wiki/Declarative-API-Overview>
 
 ## Use `npm install rxjs-compat` (to work with version 6 and be backward compatible)
+
+## Task: CHange login form from template to reactive
