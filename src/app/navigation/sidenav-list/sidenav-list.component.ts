@@ -1,5 +1,4 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { MatSidenav } from '@angular/material';
 
 @Component({
   selector: 'app-sidenav-list',
