@@ -15,3 +15,5 @@ Online Ref. : Safari
 ## Use `npm install rxjs-compat` (to work with version 6 and be backward compatible)
 
 ## Task: Change login form from template to reactive
+
+## Taask: Add Angularfire and Firebase
