@@ -21,6 +21,7 @@ export class AuthService {
       userId: Math.round(Math.random() * 1000).toString()
     };
     this.authChange.next(true);
+    console.log('login!');
   }
 
   logout() {

@@ -32,6 +32,8 @@ export class LoginComponent implements OnInit {
       email: this.loginForm.value.email,
       password: this.loginForm.value.password
     });
+    console.log(this.loginForm);
+    console.log('Saved: ' + JSON.stringify(this.loginForm.value));
   }
 
 }

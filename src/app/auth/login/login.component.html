@@ -1,5 +1,5 @@
 <section class="signup" fxLayoutAlign="center center">
-  <form
+  <form novalidate
     fxLayoutGap="10px"
     fxLayout="column"
     [formGroup]="loginForm"
@@ -11,6 +11,7 @@
         matInput
         placeholder="Your email"
         formControlName="email"
+        name="email"
       />
       <mat-error *ngIf="email.errors.required">
         Field must not be empty.</mat-error
