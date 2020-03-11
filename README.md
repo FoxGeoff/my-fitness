@@ -16,7 +16,6 @@ Online Ref. : Safari
 
 ## Task: Change login form from template to reactive
 
-## Module 5: DAta and Angular Material
+## Module 5: Data and Angular Material
 
 ## Task: Add Angularfire and Firebase
- 
