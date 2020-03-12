@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Subscription } from 'rxjs';
+
 import { AuthService } from '../auth.service';
 
 @Component({
@@ -12,6 +14,8 @@ export class LoginComponent implements OnInit {
   loginForm: FormGroup;
   email: FormControl;
   password: FormControl;
+  isAuth = false;
+  authSubscription: Subscription;
 
   constructor(public authService: AuthService) { }
 
@@ -21,6 +25,12 @@ export class LoginComponent implements OnInit {
         validators: [Validators.required, Validators.email] }),
       password: new FormControl('', {
         validators: [Validators.required, Validators.minLength(6)] })
+    });
+  }
+
+  AuthSubscription() {
+    this.authSubscription = this.authService.authChange.subscribe(authStatus => {
+      this.isAuth = authStatus;
     });
   }
 
