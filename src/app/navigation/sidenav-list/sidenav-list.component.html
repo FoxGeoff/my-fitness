@@ -3,7 +3,7 @@
     <mat-icon>face</mat-icon>
     <span class="nav-text">Signup</span>
   </a>
-  <a *ngIf="!isAuth" mat-list-item routerLink="/login" (click)="onSidenavClose()">
+  <a *ngIf="!isAuth" mat-list-item routerLink="/login" (click)="Login()">
     <mat-icon>input</mat-icon>
     <span class="nav-text">Login</span>
   </a>
@@ -12,7 +12,7 @@
     <span class="nav-text">Training</span>
   </a>
   <a *ngIf="isAuth" mat-list-item routerLink="/login">
-    <button mat-icon-button (click)="onSidenavClose()">
+    <button mat-icon-button (click)="Logout()">
       <mat-icon>keyboard_tab</mat-icon>
       <span class="nav-text">Logout</span>
     </button>
