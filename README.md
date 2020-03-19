@@ -20,6 +20,7 @@ Online Ref. : Safari
 
 * Header login/logout display/hide on authorization of user
 * Sidebar login/logout display/hide on authorization of user
-* Router Gaurd
+* Router Guards
+* Add data service
 
 ## Task: Add Angularfire and Firebase
