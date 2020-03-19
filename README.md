@@ -19,6 +19,7 @@ Online Ref. : Safari
 ## Module 5: Data and Angular Material
 
 * Header login/logout display/hide on authorization of user
-* SIdebar login/logout display/hide on authorization of user
+* Sidebar login/logout display/hide on authorization of user
+* Router Gaurd
 
 ## Task: Add Angularfire and Firebase
