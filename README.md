@@ -23,4 +23,4 @@ Online Ref. : Safari
 * Router Guards
 * Add data service
 
-## Task: Add Angularfire and Firebase
+## Task: Add Angularfire and Firebase database
