@@ -13,4 +13,8 @@ export class TrainingService {
   ];
 
   constructor() { }
+
+  getExercises() {
+    return this.availableExercises;
+  }
 }
