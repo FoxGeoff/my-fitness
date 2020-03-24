@@ -13,12 +13,6 @@ export class NewTrainingComponent implements OnInit {
 
   @Output() startTraining = new EventEmitter<void>();
 
-  foods: Food[] = [
-    { value: 'steak-0', viewValue: 'Steak' },
-    { value: 'pizza-1', viewValue: 'Pizza' },
-    { value: 'tacos-2', viewValue: 'Tacos' }
-  ];
-
   constructor() { }
 
   ngOnInit() {
