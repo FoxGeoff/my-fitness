@@ -21,6 +21,6 @@ Online Ref. : Safari
 * Header login/logout display/hide on authorization of user
 * Sidebar login/logout display/hide on authorization of user
 * Router Guards
-* Add data service
+* Add data service - This video is about Preparing the Exercise Data in detail.
 
 ## Task: Add Angularfire and Firebase database
