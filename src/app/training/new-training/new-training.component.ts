@@ -14,6 +14,7 @@ export interface Food {
 export class NewTrainingComponent implements OnInit {
 
   @Output() startTraining = new EventEmitter<void>();
+
   availableExercises: Exercise[];
 
   constructor(private trainingService: TrainingService) { }
