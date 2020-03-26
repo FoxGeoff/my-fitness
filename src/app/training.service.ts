@@ -6,7 +6,9 @@ import { Subject } from 'rxjs';
   providedIn: 'root'
 })
 export class TrainingService {
-  activeExercise = new Subject<Exercise>();
+  exerciseChanged = new Subject<Exercise>();
+
+  private runningExercise: Exercise;
 
   private availableExercises: Exercise[] = [
     {id: 'crunches', name: 'Crunches', duration: 30, calories: 8},
@@ -14,7 +16,6 @@ export class TrainingService {
     {id: 'side-lunges', name: 'Side-lunges', duration: 120, calories: 5},
     {id: 'burpees', name: 'Burpees', duration: 60, calories: 8},
   ];
-  private selectedExercise: Exercise;
 
   constructor() { }
 
@@ -23,9 +24,9 @@ export class TrainingService {
   }
 
   startExercise(selectedId: string) {
-    this.selectedExercise =
-      this.availableExercises.find( ex => ex.id === selectedId);
-
-    this.activeExercise.next(this.selectedExercise);
+    this.runningExercise =
+      this.availableExercises.find( ex => ex.id === selectedId
+    );
+    this.exerciseChanged.next({...this.runningExercise});
   }
 }
