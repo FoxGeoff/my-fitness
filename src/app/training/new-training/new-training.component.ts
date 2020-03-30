@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TrainingService } from 'src/app/training.service';
 import { Exercise } from 'src/app/exercise.model';
 
@@ -13,8 +13,6 @@ export interface Food {
 })
 export class NewTrainingComponent implements OnInit {
 
-  @Output() startTraining = new EventEmitter<void>();
-
   availableExercises: Exercise[];
 
   constructor(private trainingService: TrainingService) { }
@@ -24,6 +22,6 @@ export class NewTrainingComponent implements OnInit {
   }
 
   onStartNewTraining() {
-    this.startTraining.emit();
+    this.trainingService.startExercise();
   }
 }
