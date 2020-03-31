@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TrainingService } from 'src/app/training.service';
 import { Exercise } from 'src/app/exercise.model';
+import { NgForm } from '@angular/forms';
 
 export interface Food {
   value: string;
@@ -21,7 +22,7 @@ export class NewTrainingComponent implements OnInit {
     this.availableExercises = this.trainingService.getExercises();
   }
 
-  onStartNewTraining() {
-    this.trainingService.startExercise();
+  onStartNewTraining(form: NgForm) {
+    this.trainingService.startExercise(form.value.exercise);
   }
 }
