@@ -8,7 +8,7 @@
       <h4>Select type of Training</h4>
       <mat-form-field>
         <mat-label>Favorite exercise</mat-label>
-        <mat-select placeholder="Select exercise" ngModel name="exercise">
+        <mat-select placeholder="Select exercise" ngModel name="exercise" required>
           <mat-option *ngFor="let exercise of availableExercises" [value]="exercise.id">
             {{ exercise.name }}
           </mat-option>
