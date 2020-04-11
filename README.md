@@ -23,4 +23,8 @@ Online Ref. : Safari
 * Router Guards
 * Add data service - This video is about Preparing the Exercise Data in detail.
 
+## Chapter 5: Working with Data and Angular Material
+
+* Adding the Angular Material Data Table.
+
 ## Task: Add Angularfire and Firebase database
