@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TrainingService } from 'src/app/training.service';
+import { Exercise } from 'src/app/exercise.model';
 
 @Component({
   selector: 'app-past-training',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PastTrainingComponent implements OnInit {
 
-  constructor() { }
+  dataSource: Exercise[];
+
+  constructor(private trainingService: TrainingService) { }
 
   ngOnInit() {
+    this.dataSource = this.trainingService.getExercises();
   }
 
 }
