@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TrainingService } from 'src/app/training.service';
 import { Exercise } from 'src/app/exercise.model';
+import { MatTableDataSource } from '@angular/material';
 
 @Component({
   selector: 'app-past-training',
@@ -8,13 +9,13 @@ import { Exercise } from 'src/app/exercise.model';
   styleUrls: ['./past-training.component.css']
 })
 export class PastTrainingComponent implements OnInit {
-
-  dataSource: Exercise[];
+  displayedColumns = ['date', 'name', 'duration', 'calories', 'state'];
+  dataSource = new MatTableDataSource<Exercise>();
 
   constructor(private trainingService: TrainingService) { }
 
   ngOnInit() {
-    this.dataSource = this.trainingService.getExercises();
+    this.dataSource.data = this.trainingService.getExercises();
   }
 
 }
