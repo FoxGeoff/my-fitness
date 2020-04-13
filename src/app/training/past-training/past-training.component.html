@@ -1,3 +1,6 @@
-<mat-table [dataSource] = "dataSource">
-
+<mat-table [dataSource]="dataSource">
+  <ng-container>
+    <mat-header-cell *matHeaderCellDef>Date</mat-header-cell>
+    <mat-cell *matCellDef="let element">{{ element.date }}</mat-cell>
+  </ng-container>
 </mat-table>
