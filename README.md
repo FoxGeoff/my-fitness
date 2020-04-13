@@ -26,5 +26,6 @@ Online Ref. : Safari
 ## Chapter 5: Working with Data and Angular Material
 
 * Adding the Angular Material Data Table.
+* Add table for past training
 
 ## Task: Add Angularfire and Firebase database
