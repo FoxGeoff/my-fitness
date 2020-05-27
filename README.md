@@ -29,3 +29,5 @@ Online Ref. : Safari
 * Add table for past training
 
 ## Task: Add Angularfire and Firebase database
+
+## Task: Add: AuthService, Code: Sidenav component

@@ -15,7 +15,7 @@ export class PastTrainingComponent implements OnInit {
   constructor(private trainingService: TrainingService) { }
 
   ngOnInit() {
-    this.dataSource.data = this.trainingService.getExercises();
+    this.dataSource.data = this.trainingService.getCompletedOrCancelledExercises();
   }
 
 }

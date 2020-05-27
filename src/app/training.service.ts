@@ -16,6 +16,7 @@ export class TrainingService {
     {id: 'side-lunges', name: 'Side-lunges', duration: 120, calories: 5},
     {id: 'burpees', name: 'Burpees', duration: 60, calories: 8},
   ];
+  exercises: Exercise[];
 
   constructor() { }
 
@@ -32,5 +33,9 @@ export class TrainingService {
 
   getRunningExercise() {
     return({...this.runningExercise});
+  }
+
+  getCompletedOrCancelledExercises() {
+    return this.exercises.slice();
   }
 }
